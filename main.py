@@ -57,7 +57,7 @@ def gradio_weather_function(city):
         return "Please enter a city name."
     
     # Use the API key directly from the script
-    API_KEY = "4849d12b9eaf42139e063525251405"
+    API_KEY = api_key
     
     weather_data = get_weather_data(API_KEY, city)
     
@@ -136,3 +136,4 @@ if __name__ == "__main__":
         server_port=7860,  # Default Gradio port
         show_error=True
     )
+
